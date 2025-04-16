@@ -20,8 +20,8 @@ require([
 
     // 添加专题图层（示例使用ArcGIS Online上的公共图层）
     const featureLayer = new FeatureLayer({
-        url: "https://services.arcgis.com/V6ZHFr6zdgNZuVG0/arcgis/rest/services/Landscape_Trees/FeatureServer/0",
-        title: "景观树木"
+        url: "https://www.geosceneonline.cn/server/rest/services/Hosted/福州市县数据/FeatureServer/0",
+        title: "福州县数据"
     });
     map.add(featureLayer);
 
@@ -29,8 +29,8 @@ require([
     const view = new MapView({
         container: "mapViewDiv",
         map: map,
-        center: [-118.805, 34.027], // 初始中心点
-        zoom: 13
+        center: [119.306, 26.075], // 初始中心点
+        zoom: 8
     });
 
     // 添加比例尺

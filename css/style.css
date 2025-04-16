@@ -54,8 +54,14 @@ body, html {
 }
 
 #basemapGalleryDiv {
-    display: inline-block;
-    height: 100px;
+    width: 100%;
+    overflow: auto;
+    padding: 10px;
+    background: #fff;
+}
+
+.esri-basemap-gallery {
+    margin: 0 auto;
 }
 
 /* 响应式设计 */
